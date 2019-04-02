@@ -1,7 +1,9 @@
-import React, { Component , useState} from 'react'; //useState es un hucks
+import React, { Component} from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
+
+import Contador from './contador';
 
 //let nombre = "Rigoberto";
 
@@ -42,15 +44,7 @@ class Contador extends Component{
   }
 }
 */
-function Contador(props){
-  const[contador, setContador] = useState(0);
-  return(
-    <div>
-      <p>conteo:{contador}</p>
-      <button onClick={()=>setContador(contador+1)}>Incrementar</button>
-    </div>
-  )
-}
+
  class Formulario extends Component{
    constructor(props){
      super(props);
